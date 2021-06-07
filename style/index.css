@@ -1,1 +1,267 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+header {
+  background-color:#5e503f;
+}
+
+h1 {
+  font-size: 50px;
+  padding: 2%;
+  color: rgb(0, 0, 0);
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.navbuttons {
+  display: flex;
+  margin: 0 0 0 2%;
+}
+
+nav a {
+  width: 5rem;
+  border: 1.5px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  background:#c6ac8f;
+  padding: 2%;
+  margin: 0 0 2% 0;
+  text-decoration: none;
+  text-align: center;
+}
+
+.pictureandinfo {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.mypicture {
+  width: auto;
+  height: 50;
+  margin: 3% 0 0 4.5%;
+}
+
+.rightofpic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 0 0 0 5rem;
+}
+
+#projectbutton {
+  width: 20%;
+  border: 1.5px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  background:#c6ac8f;
+  padding: 10px;
+  margin: 0 0 1% 0;
+  text-decoration: none;
+  text-align: center;
+}
+
+.project_section {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  text-align: center;
+  margin: 4rem 0;
+  border-top: 2px solid #646464;
+  border-bottom: 2px solid #646464;
+  padding: 3rem 0;
+}
+
+section div ul li img {
+  width: 80%;
+  padding: 1rem 0;
+}
+
+footer {
+  text-align: center;
+}
+
+#contactmebutton {
+  width: 20%;
+  border: 1.5px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  background:#c6ac8f;
+  padding: 10px;
+  margin: 0 0 5% 0;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+body {
+    background:#eae0d5;
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+      text-align: center;
+    }
+
+    body {
+        max-width: 100%;
+    }
+  
+    .navbuttons {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .pictureandinfo {
+      display: flex;
+      flex-direction:column;
+      /* justify-content: center; */
+      align-items: center;
+      /* margin-left: auto; */
+      /* margin-right: auto; */
+      /* position: relative; */
+      /* text-align: center; */
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    /* Having issues with getting max width to work, will seek help from friend when available to help. Once i can complete that, i will go through and update this with mobile responsiveness. */
+}
+* {
+    max-width:100%;
+    overflow-x: hidden;
+}
