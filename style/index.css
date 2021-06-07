@@ -128,8 +128,10 @@ table {
   border-spacing: 0;
 }
 
+
+
 header {
-  background-color: #0000006c;
+  background-color:#5e503f;
 }
 
 h1 {
@@ -142,27 +144,6 @@ h2 {
   font-size: 30px;
 }
 
-@media screen and (max-width: 800px) {
-  h1 {
-    text-align: center;
-  }
-
-  .navbuttons {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .pictureandinfo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    text-align: center;
-  }
-}
-
 .navbuttons {
   display: flex;
   margin: 0 0 0 2%;
@@ -172,23 +153,23 @@ nav a {
   width: 5rem;
   border: 1.5px solid rgb(0, 0, 0);
   color: rgb(0, 0, 0);
-  background: rgb(0, 89, 255);
-  padding: 1%;
-  margin: 0 0 1% 0;
+  background:#c6ac8f;
+  padding: 2%;
+  margin: 0 0 2% 0;
   text-decoration: none;
   text-align: center;
 }
 
 .pictureandinfo {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-direction: row;
 }
 
 .mypicture {
   width: auto;
   height: 50;
-  margin: 3% 0 0 6%;
+  margin: 3% 0 0 4.5%;
 }
 
 .rightofpic {
@@ -196,34 +177,32 @@ nav a {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  margin: 0 30% 0 0;
+  margin: 0 0 0 5rem;
 }
 
 #projectbutton {
   width: 20%;
   border: 1.5px solid rgb(0, 0, 0);
   color: rgb(0, 0, 0);
-  background: rgb(0, 89, 255);
+  background:#c6ac8f;
   padding: 10px;
   margin: 0 0 1% 0;
   text-decoration: none;
   text-align: center;
 }
 
-/**/
-
 .project_section {
-  width: 90%;
+  width: 100%;
   list-style: none;
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   align-content: center;
   text-align: center;
-  margin: 5rem 8rem;
+  margin: 4rem 0;
   border-top: 2px solid #646464;
   border-bottom: 2px solid #646464;
-  padding: 3rem;
+  padding: 3rem 0;
 }
 
 section div ul li img {
@@ -239,15 +218,50 @@ footer {
   width: 20%;
   border: 1.5px solid rgb(0, 0, 0);
   color: rgb(0, 0, 0);
-  background: rgb(0, 89, 255);
+  background:#c6ac8f;
   padding: 10px;
-  margin: 0 0 1% 0;
+  margin: 0 0 5% 0;
   text-decoration: none;
   text-align: center;
 }
 
-#testclass {
-  padding: 10% 20%;
-  margin: 10% 20%;
-  flex-align:center;
+
+body {
+    background:#eae0d5;
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+      text-align: center;
+    }
+
+    body {
+        max-width: 100%;
+    }
+  
+    .navbuttons {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .pictureandinfo {
+      display: flex;
+      flex-direction:column;
+      /* justify-content: center; */
+      align-items: center;
+      /* margin-left: auto; */
+      /* margin-right: auto; */
+      /* position: relative; */
+      /* text-align: center; */
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    /* Having issues with getting max width to work, will seek help from friend when available to help. Once i can complete that, i will go through and update this with mobile responsiveness. */
+}
+* {
+    max-width:100%;
+    overflow-x: hidden;
 }
